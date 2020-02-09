@@ -7,6 +7,7 @@ public class ApplicationApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Car car = context.getBean("audi", Car.class);
         System.out.println(car.getSpeed());
+        System.out.println(car.getEngine());
         context.close();
     }
 }
