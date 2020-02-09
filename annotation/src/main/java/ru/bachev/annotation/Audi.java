@@ -1,6 +1,7 @@
 package ru.bachev.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 //@Component("AudiCar")  можно задать id бина
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Component;
 public class Audi implements Car {
 
     @Autowired
+    @Qualifier("audiA3Engine")
     private Engine engine;
 
     //Внедрение зависимости через конструктор
