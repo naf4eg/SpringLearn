@@ -8,8 +8,15 @@ import org.springframework.stereotype.Component;
 public class Audi implements Car {
     private Engine engine;
 
+    //Внедрение зависимости через конструктор
+//    @Autowired
+//    Audi(Engine engine){
+//        this.engine = engine;
+//    }
+
+    //внедрение зависимости через сеттер
     @Autowired
-    Audi(Engine engine){
+    public void setEngine(Engine engine) {
         this.engine = engine;
     }
 
