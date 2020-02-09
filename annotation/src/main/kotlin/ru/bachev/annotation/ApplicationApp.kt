@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext
 fun main() {
     val context = ClassPathXmlApplicationContext("applicationContext.xml")
     val car = context.getBean("audi", Car::class.java)
+    println(car.model)
     println(car.speed)
     println(car.engine)
     context.close()

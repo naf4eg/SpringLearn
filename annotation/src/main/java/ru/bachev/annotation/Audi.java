@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 //@Component("AudiCar")  можно задать id бина
 @Component //в getbean вызовем audi
 public class Audi implements Car {
+
+    @Autowired
     private Engine engine;
 
     //Внедрение зависимости через конструктор
@@ -15,9 +17,14 @@ public class Audi implements Car {
 //    }
 
     //внедрение зависимости через сеттер
-    @Autowired
-    public void setEngine(Engine engine) {
-        this.engine = engine;
+//    @Autowired
+//    public void setEngine(Engine engine) {
+//        this.engine = engine;
+//    }
+
+    @Override
+    public String getModel() {
+        return "Audi";
     }
 
     @Override
