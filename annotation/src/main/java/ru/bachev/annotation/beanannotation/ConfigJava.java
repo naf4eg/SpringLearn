@@ -10,7 +10,7 @@ import ru.bachev.annotation.Engine;
 @Configuration //используем для конфигурации вместо xml
 public class ConfigJava {
 
-    @Bean
+    @Bean //id бина при этом engineCar
     public Engine engineCar(){
         return new KiaRioEngine();
         }
