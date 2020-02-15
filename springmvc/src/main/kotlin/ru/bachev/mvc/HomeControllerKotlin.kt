@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 @Controller
 class HomeControllerKotlin {
 
-    @RequestMapping("/kt/")
+    @RequestMapping("/kotlin/")
     fun showHello(): String {
         return "kotlinIndex"
     }

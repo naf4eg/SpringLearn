@@ -9,9 +9,9 @@
 <body>
 <h2>Hello World!</h2>
 <hr>
-<a href="/showform">Hello World form</a>
+<a href="/java/showform">Hello World form</a>
 <br>
-<a href="/kt/">KOTLIN</a>
+<a href="/kotlin/">KOTLIN</a>
 <br>
 <input type="button" onclick="doSomeWork()" value="Click Me"/>
 </body>

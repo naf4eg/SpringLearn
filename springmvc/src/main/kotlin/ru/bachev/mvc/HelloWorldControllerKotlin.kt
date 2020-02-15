@@ -7,18 +7,19 @@ import org.springframework.web.bind.annotation.RequestParam
 import javax.servlet.http.HttpServletRequest
 
 @Controller
+@RequestMapping("/kotlin")
 class HelloWorldControllerKotlin {
-    @RequestMapping("/kt/showForm")
+    @RequestMapping("/showForm")
     fun showForm(): String {
         return "helloworld-form"
     }
 
-    @RequestMapping("/kt/processForm")
+    @RequestMapping("/processForm")
     fun processForm(): String {
         return "helloworld"
     }
 
-    @RequestMapping("/kt/processFormVersion")
+    @RequestMapping("/processFormVersion")
     fun sayOne(request: HttpServletRequest, model: Model): String {
         val name: String = request.getParameter("studentName").toUpperCase()
         val message: String = "YO KOTLIN! $name"
@@ -27,7 +28,7 @@ class HelloWorldControllerKotlin {
         return "helloworld"
     }
 
-    @RequestMapping("/kt/processFormVersionTwo")
+    @RequestMapping("/processFormVersionTwo")
     fun sayTwo(@RequestParam("studentName") name: String,
             model: Model): String {
 

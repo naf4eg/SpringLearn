@@ -7,6 +7,6 @@
 <body>
 <h2>Hello KOTLIN!</h2>
 <hr>
-<a href="/kt/showForm">Hello World form</a>
+<a href="/kotlin/showForm">Hello World form</a>
 </body>
 </html>
