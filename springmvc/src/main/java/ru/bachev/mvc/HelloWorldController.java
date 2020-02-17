@@ -35,7 +35,7 @@ public class HelloWorldController {
     }
 
     @RequestMapping("/processFormVersionTwo")
-    public String saytwo(
+    public String sayTwo(
             @RequestParam("studentName") String theName,
             Model model) {
 
