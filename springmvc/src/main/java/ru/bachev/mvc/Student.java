@@ -1,5 +1,7 @@
 package ru.bachev.mvc;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import java.util.HashMap;
 
 public class Student {
