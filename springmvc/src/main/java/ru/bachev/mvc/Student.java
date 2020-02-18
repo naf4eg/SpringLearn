@@ -1,9 +1,17 @@
 package ru.bachev.mvc;
 
+import java.util.HashMap;
+
 public class Student {
     private String firstName;
     private String lastName;
     private String country;
+
+    private HashMap<String, String> countryList;
+
+    public HashMap<String, String> getCountryList() {
+        return countryList;
+    }
 
     public String getCountry() {
         return country;
@@ -14,6 +22,12 @@ public class Student {
     }
 
     public Student() {
+        countryList = new HashMap<>();
+        countryList.put("BR", "Brazil");
+        countryList.put("GER", "Germany");
+        countryList.put("RU", "Russia");
+        countryList.put("IN", "India");
+        countryList.put("US","United State of America");
     }
 
     public String getFirstName() {
