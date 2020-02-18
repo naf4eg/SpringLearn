@@ -14,6 +14,8 @@
 <a href="/kotlin/">KOTLIN Hello World</a>
 <br><br><br><br>
 <a href="/student/showForm">Student Form Java</a>
+<br><br>
+<a href="/pacient/showForm">Pacient Form KOTLIN</a>
 <br><br><br>
 <input type="button" onclick="doSomeWork()" value="Click Me"/>
 </body>
