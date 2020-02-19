@@ -11,6 +11,20 @@ public class Student {
 
     private String favoriteLanguage;
 
+    public void setCountryList(HashMap<String, String> countryList) {
+        this.countryList = countryList;
+    }
+
+    public HashMap<String, String> getFavoriteLanguageOptions() {
+        return favoriteLanguageOptions;
+    }
+
+    public void setFavoriteLanguageOptions(HashMap<String, String> favoriteLanguageOptions) {
+        this.favoriteLanguageOptions = favoriteLanguageOptions;
+    }
+
+    private HashMap<String, String> favoriteLanguageOptions;
+
     public String getFavoriteLanguage() {
         return favoriteLanguage;
     }
@@ -38,6 +52,12 @@ public class Student {
         countryList.put("RU", "Russia");
         countryList.put("IN", "India");
         countryList.put("US","United State of America");
+
+        favoriteLanguageOptions = new HashMap<>();
+        favoriteLanguageOptions.put("Java", "Java");
+        favoriteLanguageOptions.put("C#", "C#");
+        favoriteLanguageOptions.put("PHP", "PHP");
+        favoriteLanguageOptions.put("Ruby", "Ruby");
     }
 
     public String getFirstName() {
