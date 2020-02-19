@@ -26,6 +26,14 @@
 
     <br><br>
 
+    Department: <br>
+
+    Surgery <form:radiobutton path="department" value="Surgery"/>
+    Oncology <form:radiobutton path="department" value="Oncology"/>
+    Traumatology <form:radiobutton path="department" value="Traumatology"/>
+
+    <br><br>
+
     <input type="submit" value="Submit"/>
 
 </form:form>

@@ -9,6 +9,16 @@ public class Student {
 
     private HashMap<String, String> countryList;
 
+    private String favoriteLanguage;
+
+    public String getFavoriteLanguage() {
+        return favoriteLanguage;
+    }
+
+    public void setFavoriteLanguage(String favoriteLanguage) {
+        this.favoriteLanguage = favoriteLanguage;
+    }
+
     public HashMap<String, String> getCountryList() {
         return countryList;
     }
