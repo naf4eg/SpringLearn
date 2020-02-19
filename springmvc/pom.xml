@@ -147,6 +147,66 @@
       <artifactId>kotlin-stdlib-jdk8</artifactId>
       <version>${kotlin.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-osgi-karaf-features</artifactId>
+      <version>6.1.2.Final</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-osgi</artifactId>
+      <version>6.1.2.Final</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-relocation</artifactId>
+      <version>6.1.2.Final</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-modules</artifactId>
+      <version>6.1.2.Final</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-cdi</artifactId>
+      <version>6.1.2.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-annotation-processor</artifactId>
+      <version>6.1.2.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>6.1.2.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-test-utils</artifactId>
+      <version>6.1.2.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator-parent</artifactId>
+      <version>6.1.2.Final</version>
+      <type>pom</type>
+    </dependency>
+
   </dependencies>
 
   <build>
