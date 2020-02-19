@@ -1,11 +1,22 @@
 package ru.bachev.mvc;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class Student {
     private String firstName;
     private String lastName;
     private String country;
+
+    private List<String> operatingSystems;
+
+    public List<String> getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(List<String> operatingSystems) {
+        this.operatingSystems = operatingSystems;
+    }
 
     private HashMap<String, String> countryList;
 
