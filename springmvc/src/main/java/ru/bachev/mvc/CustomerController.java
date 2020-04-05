@@ -15,7 +15,6 @@ import javax.validation.Valid;
 @RequestMapping("/customer")
 public class CustomerController {
 
-
     //для валидации пробелов
     @InitBinder
     public void initBinder(WebDataBinder dataBinder) {
