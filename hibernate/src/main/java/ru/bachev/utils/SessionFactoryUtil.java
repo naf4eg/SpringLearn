@@ -1,6 +1,5 @@
 package ru.bachev.utils;
 
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import ru.bachev.model.Student;
