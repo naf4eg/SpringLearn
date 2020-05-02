@@ -16,7 +16,11 @@ public class StudentService {
         return studentDAO.readId(studentId);
     }
 
-    public List<Student> queryStudents(){
+    public List<Student> queryAllStudents(){
         return studentDAO.readAllStudents();
+    }
+
+    public List<Student> queryStudentsWithLastName(String lastName){
+        return studentDAO.readStudentWithLastName(lastName);
     }
 }

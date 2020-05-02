@@ -21,10 +21,10 @@ public class Audi implements Car {
     @Value("${model}")
     private String model;
 
-    @Value("${speed}")
+   @Value("${speed}")
     private String speed;
 
-    //Внедрение зависимости через конструктор
+//Внедрение зависимости через конструктор
 //    @Autowired
 //    Audi(Engine engine){
 //        this.engine = engine;

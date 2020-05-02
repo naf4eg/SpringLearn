@@ -36,4 +36,13 @@ public class StudentDAO {
         session.close();
         return listStudents;
     }
+
+    public List<Student> readStudentWithLastName(String lastName){
+        Session session = SessionFactoryUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        List<Student> listStudents = session.createQuery("from Student std where std.lastName = 'Burkov'").list();
+        session.getTransaction().commit();
+        session.close();
+        return listStudents;
+    }
 }
