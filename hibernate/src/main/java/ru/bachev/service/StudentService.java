@@ -16,6 +16,18 @@ public class StudentService {
         return studentDAO.readId(studentId);
     }
 
+    public void updateStudent(int studentId, String firstName) {
+        studentDAO.updateStudentFirstName(studentId, firstName);
+    }
+
+    public void deleteStudent(int studentId) {
+        studentDAO.delete(studentId);
+    }
+
+    public void updateEmailForAllStudents(String email) {
+        studentDAO.updateEmailForAllStudents(email);
+    }
+
     public List<Student> queryAllStudents(){
         return studentDAO.readAllStudents();
     }

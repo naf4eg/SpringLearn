@@ -9,13 +9,9 @@ public class QueryStudentsMain {
     public static void main(String[] args) {
 
         StudentService studentService = new StudentService();
-
         List<Student> students = studentService.queryAllStudents();
-
         displayStudents(students);
-
         List<Student> studentsWithLastName = studentService.queryStudentsWithLastName("Burkov");
-
         displayStudents(studentsWithLastName);
 
     }
