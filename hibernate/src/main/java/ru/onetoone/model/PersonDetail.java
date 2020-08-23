@@ -3,7 +3,7 @@ package ru.onetoone.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "person_detail")
+@Table(name = "person_detail", schema = "one_to_one")
 public class PersonDetail {
 
     @Id
