@@ -18,6 +18,15 @@ public class PersonDAO {
         session.getTransaction().commit();
         session.close();
     }
+
+    public void delete(int id) {
+        Session session = SessionFactoryUtilOneToOne.getSessionFactory().openSession();
+        session.beginTransaction();
+        Person person = session.get(Person.class, id);
+        session.delete(person);
+        session.getTransaction().commit();
+        session.close();
+    }
 //
 //    public Student readId(int studentId) {
 //        Session session = SessionFactoryUtil.getSessionFactory().openSession();

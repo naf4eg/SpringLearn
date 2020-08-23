@@ -11,6 +11,10 @@ public class PersonService {
         personDAO.create(person, personDetail);
     }
 
+    public void deletePerson(int id) {
+        personDAO.delete(id);
+    }
+
 //
 //    public Student readStudent(int studentId) {
 //        return studentDAO.readId(studentId);
