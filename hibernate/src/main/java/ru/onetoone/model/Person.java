@@ -3,12 +3,12 @@ package ru.onetoone.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "student")
-public class Student {
+@Table(name = "person")
+public class Person {
 
     @Id
-    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private int id;
 
     @Column(name = "first_name")
@@ -20,10 +20,14 @@ public class Student {
     @Column(name = "email")
     private String email;
 
-    public Student(){
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "person_detail_id")
+    private PersonDetail personDetail;
+
+    public Person() {
     }
 
-    public Student(String firstName, String lastName, String email) {
+    public Person(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -61,13 +65,22 @@ public class Student {
         this.email = email;
     }
 
+    public PersonDetail getPersonDetail() {
+        return personDetail;
+    }
+
+    public void setPersonDetail(PersonDetail personDetail) {
+        this.personDetail = personDetail;
+    }
+
     @Override
     public String toString() {
-        return "Student{" +
+        return "Person{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
+                ", personDetail=" + personDetail +
                 '}';
     }
 }
