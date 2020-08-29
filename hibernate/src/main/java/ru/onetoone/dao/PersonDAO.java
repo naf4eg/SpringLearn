@@ -39,6 +39,15 @@ public class PersonDAO {
         return readPerson;
     }
 
+    public void deleteIdBi(int personId) {
+        Session session = SessionFactoryUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        PersonDetail personDetail = session.get(PersonDetail.class, personId);
+        session.delete(personDetail);
+        session.getTransaction().commit();
+        session.close();
+    }
+
 //    public void updateStudentFirstName(int studentId, String firstName) {
 //        Session session = SessionFactoryUtil.getSessionFactory().openSession();
 //        session.beginTransaction();

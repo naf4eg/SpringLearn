@@ -10,7 +10,7 @@ public class PersonMain {
 
     public static void main(String[] args) {
         PersonMain personMain = new PersonMain();
-        personMain.readPerson(ID);
+        personMain.deletePersonBi(ID);
     }
 
     private void createPerson(){
@@ -30,10 +30,15 @@ public class PersonMain {
     }
 
     //Bi-directional mode
-    private void readPerson(int id) {
+    private void readPersonBi(int id) {
         PersonService personService = new PersonService();
-        PersonDetail person = personService.readPerson(id);
+        PersonDetail person = personService.readPersonBi(id);
         System.out.println(person.toString());
         System.out.println(person.getPerson());
+    }
+
+    private void deletePersonBi(int id) {
+        PersonService personService = new PersonService();
+        personService.deletePersonBi(id);
     }
 }

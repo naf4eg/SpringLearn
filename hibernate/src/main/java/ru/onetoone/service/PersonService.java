@@ -16,27 +16,11 @@ public class PersonService {
     }
 
 
-    public PersonDetail readPerson(int personId) {
+    public PersonDetail readPersonBi(int personId) {
         return personDAO.readId(personId);
     }
 
-//    public void updateStudent(int studentId, String firstName) {
-//        studentDAO.updateStudentFirstName(studentId, firstName);
-//    }
-//
-//    public void deleteStudent(int studentId) {
-//        studentDAO.delete(studentId);
-//    }
-//
-//    public void updateEmailForAllStudents(String email) {
-//        studentDAO.updateEmailForAllStudents(email);
-//    }
-//
-//    public List<Student> queryAllStudents(){
-//        return studentDAO.readAllStudents();
-//    }
-//
-//    public List<Student> queryStudentsWithLastName(String lastName){
-//        return studentDAO.readStudentWithLastName(lastName);
-//    }
+    public void deletePersonBi(int personId) {
+        personDAO.deleteIdBi(personId);
+    }
 }
