@@ -17,12 +17,24 @@ public class PersonDetail {
     @Column(name = "hobby")
     private String hobby;
 
+    // This add for Bi-directional mode
+    @OneToOne(mappedBy = "personDetail", cascade = CascadeType.ALL)
+    private Person person;
+
     public PersonDetail() {
     }
 
     public PersonDetail(String youtobeChannel, String hobby) {
         this.youtobeChannel = youtobeChannel;
         this.hobby = hobby;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     public int getId() {

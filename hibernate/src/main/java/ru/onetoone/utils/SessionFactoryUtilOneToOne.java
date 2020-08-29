@@ -2,7 +2,6 @@ package ru.onetoone.utils;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import ru.bachev.model.Student;
 import ru.onetoone.model.Person;
 import ru.onetoone.model.PersonDetail;
 
