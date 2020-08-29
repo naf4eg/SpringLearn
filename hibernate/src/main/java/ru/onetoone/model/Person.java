@@ -80,7 +80,7 @@ public class Person {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", personDetail=" + personDetail +
+                ", personDetail=" +  +
                 '}';
     }
 }

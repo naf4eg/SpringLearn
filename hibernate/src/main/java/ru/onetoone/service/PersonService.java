@@ -15,11 +15,11 @@ public class PersonService {
         personDAO.delete(id);
     }
 
-//
-//    public Student readStudent(int studentId) {
-//        return studentDAO.readId(studentId);
-//    }
-//
+
+    public PersonDetail readPerson(int personId) {
+        return personDAO.readId(personId);
+    }
+
 //    public void updateStudent(int studentId, String firstName) {
 //        studentDAO.updateStudentFirstName(studentId, firstName);
 //    }

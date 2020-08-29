@@ -1,6 +1,7 @@
 package ru.onetoone.dao;
 
 import org.hibernate.Session;
+import ru.bachev.utils.SessionFactoryUtil;
 import ru.onetoone.model.Person;
 import ru.onetoone.model.PersonDetail;
 import ru.onetoone.utils.SessionFactoryUtilOneToOne;
@@ -28,16 +29,16 @@ public class PersonDAO {
         session.close();
     }
 
-//
-//    public Student readId(int studentId) {
-//        Session session = SessionFactoryUtil.getSessionFactory().openSession();
-//        session.beginTransaction();
-//        Student readStudent = session.get(Student.class, studentId);
-//        session.getTransaction().commit();
-//        session.close();
-//        return readStudent;
-//    }
-//
+
+    public PersonDetail readId(int personId) {
+        Session session = SessionFactoryUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        PersonDetail readPerson = session.get(PersonDetail.class, personId);
+        session.getTransaction().commit();
+        session.close();
+        return readPerson;
+    }
+
 //    public void updateStudentFirstName(int studentId, String firstName) {
 //        Session session = SessionFactoryUtil.getSessionFactory().openSession();
 //        session.beginTransaction();

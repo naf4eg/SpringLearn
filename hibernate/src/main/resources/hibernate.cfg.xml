@@ -22,5 +22,9 @@
         <property name="show_sql">true</property> <!-- Show SQL in console -->
         <property name="format_sql">true</property> <!-- Show SQL formatted -->
 
+        <!--for Bi Directional mode-->
+        <mapping class="ru.onetoone.model.PersonDetail"/>
+        <mapping class="ru.onetoone.model.Person"/>
+
     </session-factory>
 </hibernate-configuration>
